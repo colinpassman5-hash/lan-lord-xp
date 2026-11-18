@@ -1,0 +1,22 @@
+name: 💡 Idea / feature
+description: Pitch a feature, item, event, joke, or location
+labels: [idea]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: The idea
+      placeholder: A Tamagotchi that dies if you don't feed it Hot Pockets.
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of thing is it?
+      options: [New item, New event, New location/chapter, Customer behavior, Music, UI/UX, Jokes/writing, Other]
+  - type: checkboxes
+    id: help
+    attributes:
+      label: Want to build it?
+      options:
+        - label: I'd like to try making a PR for this

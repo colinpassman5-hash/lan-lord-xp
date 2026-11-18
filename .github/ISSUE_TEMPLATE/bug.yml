@@ -1,0 +1,30 @@
+name: 🐛 Bug report
+description: Something broke (and it wasn't on purpose)
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      placeholder: My customer walked into the wall and achieved enlightenment.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: "1. Built 8 XTREME towers in a row  2. Turned off AC  3. Fire"
+  - type: input
+    id: state
+    attributes:
+      label: Game state (auto-filled if you used the in-game 📮 Dev Notes button)
+      placeholder: v0.9.0 · Mom's Basement · Sep 12 2004 · $1,200 · 3.4★
+  - type: input
+    id: browser
+    attributes:
+      label: Browser / OS
+      placeholder: Chrome on Windows 11
