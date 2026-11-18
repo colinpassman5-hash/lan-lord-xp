@@ -36,6 +36,14 @@ const CATALOG: Entry[] = [
   { file: 'Skrillecks - Scary Monsters & Nice Routers.mp3', keys: 'skrillecks skrillex dubstep scary monsters', size: '6.0 MB', kbps: 320, sources: 501, speed: 'Cable', ref: T('Skrillecks'), virus: 0.06 },
   { file: 'Cascada Falls - Everytime We LAN.mp3', keys: 'cascada falls everytime we touch lan eurodance', size: '4.4 MB', kbps: 192, sources: 380, speed: 'Cable', ref: T('Cascada Falls'), virus: 0.05 },
   { file: 'My Chemical Bromance - Helena Rubinstein.mp3', keys: 'my chemical bromance romance helena emo', size: '3.8 MB', kbps: 192, sources: 260, speed: 'DSL', ref: T('My Chemical'), virus: 0.05 },
+  { file: 'Bonzai Buddy - Hi Im Your Friend (Dance Remix).mp3', keys: 'bonzai buddy friend dance remix purple', size: '2.7 MB', kbps: 128, sources: 305, speed: 'Cable', ref: C('kazoo'), virus: 0.35 },
+  { file: 'Nokya_Ringtone_Pack_FREE_x500.zip.exe', keys: 'nokya nokia ringtone pack free polyphonic', size: '0.2 MB', kbps: 0, sources: 5120, speed: 'T1', ref: C('dialup'), virus: 0.96 },
+  { file: 'DJ Buffering - 56k Anthem (Club Mix).mp3', keys: 'dj buffering 56k modem anthem club mix', size: '4.8 MB', kbps: 192, sources: 77, speed: 'Modem', ref: C('dialup'), virus: 0.08 },
+  { file: 'totally_not_a_virus_screensaver.scr.exe', keys: 'screensaver scr virus free pipes', size: '0.1 MB', kbps: 0, sources: 8888, speed: 'T1', ref: C('fart'), virus: 0.99 },
+  { file: 'Hot Pockit Hero - Microwave Me Maybe.mp3', keys: 'hot pocket pockit hero microwave pop catchy', size: '3.5 MB', kbps: 160, sources: 410, speed: 'DSL', ref: C('polka'), virus: 0.06 },
+  { file: 'class_presentation_FINAL_v7_REAL.ppt.mp3.exe', keys: 'class presentation homework ppt essay', size: '0.3 MB', kbps: 0, sources: 1500, speed: 'Cable', ref: C('skip'), virus: 0.93 },
+  { file: 'Screaming Goat Orchestra - Greatest Bleats Vol. 2.mp3', keys: 'screaming goat orchestra bleats greatest hits', size: '5.1 MB', kbps: 128, sources: 29, speed: 'Modem', ref: C('goat'), virus: 0.03 },
+  { file: 'chiptune_boss_battle_xX_darkness_Xx.mp3', keys: 'chiptune boss battle darkness emo metal', size: '2.9 MB', kbps: 128, sources: 144, speed: 'DSL', ref: C('screamo'), virus: 0.1 },
 ];
 const SPEED_SECS: Record<Entry['speed'], [number, number]> = { T1: [2, 4], Cable: [4, 7], DSL: [6, 10], Modem: [12, 18] };
 const CURSED_REACT: Record<string, string> = {
