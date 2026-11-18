@@ -21,8 +21,8 @@ New locations (`LOCATIONS` in `src/data.ts`), rival Bob, boss tournaments, multi
 
 ## Dev setup
 ```bash
-git clone https://github.com/colinpassman5-hash/lan-lord-xp.git
-cd lan-lord-xp
+git clone https://github.com/lanlordxp/lanlordxp.github.io.git
+cd lanlordxp.github.io
 npm install
 npm run dev          # http://localhost:5173  (add ?chaos for an instant late-game sandbox)
 npm run build        # typecheck + production build

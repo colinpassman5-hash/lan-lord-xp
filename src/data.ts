@@ -368,9 +368,9 @@ export const PERKS: PerkDef[] = [
 export interface Profile { name: string; shop: string; rival: string; sex: 'm' | 'f'; look: any; starter: 'beige' | 'gateway' | 'emachine'; degen: string; fav: 'halo' | 'wow' | 'cs' | 'rs' | 'ddr'; away: string; }
 // ---- community build config
 export const GAME_VERSION = '0.9.0-community';
-export const REPO_SLUG = 'colinpassman5-hash/lan-lord-xp';
+export const REPO_SLUG = 'lanlordxp/lanlordxp.github.io';
 export const REPO_URL = 'https://github.com/' + REPO_SLUG;
-export const PLAY_URL = 'https://colinpassman5-hash.github.io/lan-lord-xp/';
+export const PLAY_URL = 'https://lanlordxp.github.io/';
 export const CLAN_TAGS = ['[PWN]', 'xXx', '{LAN}', '-=SoD=-', '[NOOB]', '[BAWLZ]', '~TFC~', '[1337]'];
 export const OWNER_LINES = ['business is BOOMING', 'I should hire someone. I am someone.', 'is that a new stain?', 'this is fine', 'mom would be so proud. or concerned', 'remember: the customer is always lagging', 'I have not slept since Tuesday', 'one day... the TOWER', 'who ordered 40 Hot Pockets? oh. me.', 'I am the LAN LORD', 'gg ez', 'I could get a real job. but why'];
 export interface Meta { profile?: Profile; tutorialDone?: boolean; downloads?: any[]; clout: number; totalClout: number; perks: Record<string, number>; loc: number; runs: number; research: Record<string, boolean>; lifetime: { served: number; earned: number; fires: number; deaths: number; }; }

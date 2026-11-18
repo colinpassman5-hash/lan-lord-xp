@@ -3,7 +3,7 @@
 **A fully absurd 2004–2012 LAN café tycoon that runs in your browser.**
 Drop out of community college. Start a LAN party in your mom's basement. Survive LimeWire viruses, BonziBUDDY, raging 12-year-olds, health inspectors and Mom. Grow it into an eSports **TOWER**.
 
-### ▶️ [PLAY NOW: colinpassman5-hash.github.io/lan-lord-xp](https://colinpassman5-hash.github.io/lan-lord-xp/)
+### ▶️ [PLAY NOW: lanlordxp.github.io](https://lanlordxp.github.io/)
 *Free. No install. Open source. Community built.*
 
 ![LAN LORD XP: a chaotic late-game café](docs/screenshot-chaos.png)
@@ -20,13 +20,13 @@ Drop out of community college. Start a LAN party in your mom's basement. Survive
 ![Mom's basement](docs/screenshot-basement.png)
 
 ## 📮 Feedback → the dev
-Use the **📮 Dev Notes** button in the game's top bar. It attaches your game state automatically and opens a GitHub issue, or lets you post it on X. You can also [open an issue](https://github.com/colinpassman5-hash/lan-lord-xp/issues/new/choose) directly.
+Use the **📮 Dev Notes** button in the game's top bar. It attaches your game state automatically and opens a GitHub issue, or lets you post it on X. You can also [open an issue](https://github.com/lanlordxp/lanlordxp.github.io/issues/new/choose) directly.
 
 ## 🛠️ Community build: come build it with us
 Anyone can contribute, from one-line jokes to whole chapters. Start here: **[CONTRIBUTING.md](CONTRIBUTING.md)**
 ```bash
-git clone https://github.com/colinpassman5-hash/lan-lord-xp.git
-cd lan-lord-xp && npm install && npm run dev
+git clone https://github.com/lanlordxp/lanlordxp.github.io.git
+cd lanlordxp.github.io && npm install && npm run dev
 ```
 Good first contributions: customer thoughts, CaféSpace reviews, Mom yells, LimeWire files, clan tags, new items drawn in code, and original parody music.
 
