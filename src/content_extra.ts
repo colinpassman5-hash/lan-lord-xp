@@ -249,6 +249,11 @@ export const EXTRA_REVIEWS: Record<number, string[]> = {
     'dudeee i stayed 14 hrs n forgot my own name lol. 100% coming bak tomorrow',
     'way better than bobs bait shop!! bob doesnt even have energy drinks, just worms',
     'PCs glow blue which means theyre fast!! thx 4 letting me crash on the couch lol',
+    'lol i came 4 1 hr n stayed til the sun came up. 5/5 thx 4 the add!!',
+    '5 starz!! my k/d went up just by sitting in ur chairs. coincidence?? no.',
+    'best cafe in town!! the guy at the desk let me use the good headphones ^_^',
+    '10/10 would lag again!! u guys r in my aim away message 4ever',
+    'omg the snack fridge has CHERRY cola!! moving in. dont tell my mom',
   ],
   4: [
     '4 starz!! really kewl vibes, only lost 1 star cuz some kid screamed in my ear lol',
@@ -257,6 +262,10 @@ export const EXTRA_REVIEWS: Record<number, string[]> = {
     '4/5!! great hot pockets (burned my tongue tho). still put u in my myspace bulletin',
     'awesome setup!! weird llama stared at me the whole time but honestly kinda chill',
     'would be 5 stars but my mom dragged me out by my hoodie. not ur fault tho!!',
+    '4/5 lots of fun!! mouse ball was kinda crusty but i beat 3 sophomores so w/e',
+    'kewl place, pretty fast internet!! only 1 guy yelled CAMPER at me. thx 4 the add',
+    '4 starz cuz the couch ate my pencil. otherwise sik!! xD',
+    'good stuff!! wish the music wasnt the same dial up sound on loop tho lol',
   ],
   3: [
     'meh it was alrite. pc ran ok, guy next to me kept breathing on my mouse hand O_o',
@@ -265,6 +274,10 @@ export const EXTRA_REVIEWS: Record<number, string[]> = {
     'it exists!! played cs 1.6 for 2 hrs, got called a n00b by an 11 yr old. 3/5',
     'not bad not great. smells like melted plastic n Axe Phoenix. thx 4 the add tho',
     '3 stars. toilet was occupied for 4 hours straight so i just held it like a pro',
+    '3/5 it was ok!! the fan sounds like a jet but my frames were fine i guess',
+    'eh. my screen name got stolen at the desk PC. still got a decent match in tho',
+    '3 starz. nobody here knows what a fraps is. i explained it 3 times :/',
+    'average!! monitor had a sticker of a cat n i kept losing 2 it. ok i guess',
   ],
   2: [
     '2 starz... ping spiked to 800 n my character walked into a wall for 10 mins >:(',
@@ -273,6 +286,10 @@ export const EXTRA_REVIEWS: Record<number, string[]> = {
     'too hot in there!! felt like gaming inside a microwave burrito. see u tuesday',
     '2/5. bobs bait shop smells better and bob sells actual nightcrawlers',
     'keyboard was missing the W key so i had to walk backwards the whole match :/',
+    '2/5 someone microwaved fish near my seat. gg. also wheres the volume knob??',
+    'ping was kinda bad n my headset smelled like old pizza rolls. bummer',
+    '2 starz. 14 popups just 2 check my email?!?! pls fix ur pc lol',
+    '2/5 headset cord was 2 feet long so i played w/ my face on the desk. my neck hates u',
   ],
   1: [
     '1 STAR!! WORST CAFE EVER!! MY PC HAD 19 TOOLBARS AND BONZI BUDDY INSULTED ME',
@@ -281,6 +298,9 @@ export const EXTRA_REVIEWS: Record<number, string[]> = {
     'total scam!! paid $5 n the internet died!! had to play 3D Pinball like a caveman',
     '1 star. a mom yelled at ME even though i am 24 years old',
     'TERRIBLE!! pc caught fire n the owner asked if i wanted to pay extra for 4D heat',
+    '1 star. a spider lives in tower #3 n he is WAY better at cs than me',
+    'worst!!1! the chair collapsed mid-clutch n everyone clapped. i will never recover',
+    '1/5 my hotmail got hax0red and the owner just shrugged. ur lucky i dont have a blog',
   ],
 };
 
