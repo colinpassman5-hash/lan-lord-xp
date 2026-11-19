@@ -264,7 +264,7 @@ let seqTimer: number | null = null;
 export let currentTrack = -1;
 let step = 0; let nextTime = 0; let startTime = 0;
 const lenSecs = (tr: Track) => { const [m, s] = tr.length.split(':').map(Number); return (m || 0) * 60 + (s || 0); };
-const skipTrack = (tr: Track) => tr.title.startsWith('Prologue') || tr.title.startsWith('Professor');
+const skipTrack = (tr: Track | undefined) => !tr || !tr.title || tr.title.startsWith('Prologue') || tr.title.startsWith('Professor');
 export function playTrack(i: number) {
   if (!ac) return;
   stopMusic();

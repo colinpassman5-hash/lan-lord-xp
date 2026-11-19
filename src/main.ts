@@ -284,6 +284,7 @@ window.addEventListener('keyup', (e) => keys.delete(e.key.toLowerCase()));
 window.addEventListener('blur', () => keys.clear());
 
 // ---------------------------------------------------------------- main loop
+const loggedErrors = new Set<string>();
 let acc = 0, last = performance.now();
 function frame(now: number) {
   const dt = Math.min(0.1, (now - last) / 1000); last = now;
@@ -296,11 +297,18 @@ function frame(now: number) {
   if (tps > 0) {
     acc += dt * tps;
     let n = 0;
-    while (acc >= 1 && n < 80) { g.sim.step(); acc -= 1; n++; }
+    try { while (acc >= 1 && n < 80) { g.sim.step(); acc -= 1; n++; } }
+    catch (e) { const msg = String((e as Error)?.message || e); if (!loggedErrors.has(msg)) { loggedErrors.add(msg); console.error('sim error:', e); } acc = 0; }
     if (n >= 80) acc = 0;
   }
-  processEvents();
-  ren.draw(tps > 0 ? Math.min(1, acc) : 1, dt);
+  try {
+    processEvents();
+    ren.draw(tps > 0 ? Math.min(1, acc) : 1, dt);
+  } catch (e) {
+    // never let one bad frame freeze the game — log it once per message and keep going
+    const msg = String((e as Error)?.message || e);
+    if (!loggedErrors.has(msg)) { loggedErrors.add(msg); console.error('frame error:', e); }
+  }
   requestAnimationFrame(frame);
 }
 
@@ -322,6 +330,7 @@ if (chaos) {
   s.hire('janitor'); s.hire('tech'); s.hire('bouncer');
   s.rating = 4;
   s.served = s.L.goals.serve; s.money = Math.max(s.money, s.L.goals.cash + 5000); // 2 stars: Move Up ready
+  s.checkGoals(); s.events = [];
   for (let i = 0; i < 14; i++) s.spawnCustomer();
   processEvents();
 }

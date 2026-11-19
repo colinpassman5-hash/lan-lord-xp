@@ -650,7 +650,7 @@ export function createUI(g: GameCtx): UIApi {
         const title = h('div', { class: 'wa-title' }, h('span', {}, '*** LAN LORD RADIO ***'));
         const viz = h('canvas', { width: 150, height: 32, style: { width: '150px', height: '32px', background: '#000' } }) as HTMLCanvasElement;
         const pl = h('div', { class: 'wa-pl' });
-        const renderPl = () => { pl.innerHTML = ''; audio.TRACKS.forEach((t, i) => (t.title.startsWith('Prologue') || t.title.startsWith("Professor")) ? null : pl.append(h('div', { class: (audio.currentTrack === i ? 'on' : '') + ((t as any).downloaded ? ' dl' : ''), title: (t as any).downloaded ? 'downloaded from LimeWire' : '', ondblclick: () => { audio.playTrack(i); renderPl(); }, onclick: () => { audio.playTrack(i); renderPl(); } }, `${i + 1}. ${t.title.replace(/\.(mp3|wma)$/, '')}  (${t.length})`))); };
+        const renderPl = () => { pl.innerHTML = ''; audio.TRACKS.forEach((t, i) => (!t || !t.title || t.title.startsWith('Prologue') || t.title.startsWith("Professor")) ? null : pl.append(h('div', { class: (audio.currentTrack === i ? 'on' : '') + ((t as any).downloaded ? ' dl' : ''), title: (t as any).downloaded ? 'downloaded from LimeWire' : '', ondblclick: () => { audio.playTrack(i); renderPl(); }, onclick: () => { audio.playTrack(i); renderPl(); } }, `${i + 1}. ${t.title.replace(/\.(mp3|wma)$/, '')}  (${t.length})`))); };
         const play = (i: number) => { audio.initAudio(); audio.playTrack((i + audio.TRACKS.length) % audio.TRACKS.length); renderPl(); };
         const vol = h('input', { type: 'range', class: 'wa-vol', min: 0, max: 100, value: 32, oninput: (e: any) => audio.setMusicVolume(+e.target.value / 100) });
         b.append(h('div', { class: 'wa-main' },

@@ -7,7 +7,10 @@ const HW = 32, HH = 16;
 type P = [number, number];
 export function iso(x: number, y: number, z = 0): P { return [(x - y) * HW, (x + y) * HH - z]; }
 
+let badColorLogged = false;
 function hex(c: string): [number, number, number] {
+  if (typeof c !== 'string' || !c) { if (!badColorLogged) { badColorLogged = true; console.warn('render: missing color', new Error().stack); } return [136, 136, 136]; }
+  if (c.startsWith('hsl')) return [200, 200, 200];
   if (c.startsWith('rgb')) { const m = c.match(/\d+/g)!; return [+m[0], +m[1], +m[2]]; }
   let h = c.slice(1);
   if (h.length === 3) h = h.split('').map(ch => ch + ch).join('');
